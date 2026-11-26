@@ -1,0 +1,32 @@
+:root{
+  --bg:#fff7fb;
+  --card:#ffffff;
+  --text:#333;
+  --primary:#f2b8cb;
+  --border:#f0d7e0;
+}
+.dark-theme{
+  --bg:#1c2230;
+  --card:#283042;
+  --text:#e8ecf4;
+  --primary:#7997c9;
+  --border:#3b4863;
+}
+*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui}
+body{background:var(--bg);color:var(--text);padding:16px;transition:0.3s}
+.container{max-width:420px;margin:0 auto}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:8px}
+.version{font-size:13px;opacity:0.7}
+button{background:var(--primary);border:none;color:#fff;padding:8px 12px;border-radius:99px;cursor:pointer}
+.search-box{margin-bottom:12px}
+#searchInput{width:100%;padding:10px;border:1px solid var(--border);border-radius:12px;background:var(--card);color:var(--text)}
+#searchHistory{font-size:12px;margin-top:4px;opacity:0.6}
+.filter-panel{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+.filter-item select{width:100%;padding:7px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text)}
+.action-bar{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.countdown-wrap{background:var(--card);padding:12px;border-radius:14px;margin-bottom:16px;border:1px solid var(--border)}
+.cd-input{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
+.cd-input input{padding:7px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text)}
+.song-list{display:flex;flex-direction:column;gap:10px}
+.song-card{background:var(--card);padding:12px;border-radius:14px;border:1px solid var(--border);cursor:pointer;transition:0.2s}
+#particleCanvas{position:fixed;inset:0;pointer-events:none;z-index:99}
