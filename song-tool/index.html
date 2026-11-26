@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>歌单小工具</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1>歌单工具</h1>
+    <div class="version">歌单版本：v1.0</div>
+    <button id="themeBtn">切换主题</button>
+  </header>
+
+  <div class="search-box">
+    <input id="searchInput" placeholder="搜索歌名 / 歌手 / 歌词">
+    <div id="searchHistory"></div>
+  </div>
+
+  <div class="filter-panel">
+    <div class="filter-item">
+      <label>曲风</label>
+      <select id="filterStyle"><option value="">全部</option></select>
+    </div>
+    <div class="filter-item">
+      <label>情绪</label>
+      <select id="filterMood"><option value="">全部</option></select>
+    </div>
+    <div class="filter-item">
+      <label>PK主题</label>
+      <select id="filterPk"><option value="">全部</option></select>
+    </div>
+    <div class="filter-item">
+      <label>年份</label>
+      <select id="filterYear"><option value="">全部</option></select>
+    </div>
+    <div class="filter-item">
+      <label>首字母</label>
+      <select id="filterInitial"><option value="">全部</option></select>
+    </div>
+  </div>
+
+  <div class="action-bar">
+    <button id="randBtn">随机抽歌 & 复制歌名</button>
+    <button id="gameBtn">猜歌名小游戏</button>
+  </div>
+
+  <div class="countdown-wrap">
+    <h3>倒数日</h3>
+    <div id="countdownList"></div>
+    <div class="cd-input">
+      <input id="cdName" placeholder="事件名称">
+      <input id="cdDate" type="date">
+      <button id="addCd">添加倒数</button>
+    </div>
+  </div>
+
+  <div class="song-list" id="songList"></div>
+</div>
+
+<div id="particleCanvas"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

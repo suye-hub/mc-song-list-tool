@@ -1,0 +1,22 @@
+[
+  {
+    "name": "晚风",
+    "singer": "迷藏",
+    "lyric": "晚风轻轻吹过窗台",
+    "year": "2025",
+    "style": "流行",
+    "mood": "温柔",
+    "initial": "W",
+    "pkTheme": "治愈局"
+  },
+  {
+    "name": "沉星",
+    "singer": "迷藏",
+    "lyric": "星光沉入深海",
+    "year": "2026",
+    "style": "古风",
+    "mood": "清冷",
+    "initial": "C",
+    "pkTheme": "氛围感局"
+  }
+]
